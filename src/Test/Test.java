@@ -50,7 +50,7 @@ public class Test {
 		Produto produto1 = new Produto();
 		produto1.setDescricao("4K Ready");
 		produto1.setId(2);
-		produto1.setMarca("Asus");
+		produto1.setMarca("Asussss");
 		produto1.setNome("Gtx 980 TI");
 		produto1.setPreco(4500);
 		Produto produto2 = new Produto();
