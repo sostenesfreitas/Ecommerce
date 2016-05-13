@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site de ecommerce responsivo">
+    <meta name="keywords" content="Ecommerce,responsivo">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="sóstenes freitas">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="img/Logo.png">
+    
+    <title>Carrinho</title>
+</head>
+<body>
+     <!-------------CABEÇALHO DA PAGINA---------------->
+    <header class="cabecalho container">
+        <a href="index.html">
+            <h2 class="logo">Ecommerce </h2>
+        </a>
+        <button class="btn-menu"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+        <nav class="menu">
+               <a  class="btn-close"><i class="fa fa-times"></i></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+        </nav>
+    </header>
+    <div class="servicos">
+     <div class="cart">
+      <img src="img/65808_index_gg.jpg" alt="gtx">
+        <a href="#" style="width:68%;"> Gigabyte GTX980Ti</a>
+          <h4 style="width:50%;">R$ 3.892,90</h4>
+           <select style="width:30%;" name="quantidade" id="" class="qtd">
+               <option value="1" selecte="selected" label="1">1</option>
+               <option value="2" label="2">2</option>
+               <option value="3" label="3">3</option>
+               <option value="4" label="4">4</option>
+               <option value="5" label="5">5</option>
+               <option value="6" label="6">6</option>
+           </select>       
+    </div>   
+    <div class="cart">
+      <img src="img/65808_index_gg.jpg" alt="gtx">
+        <a href="#" style="width:68%;"> Gigabyte GTX980Ti</a>
+          <h4 style="width:50%;">R$ 3.892,90</h4>
+           <select style="width:30%;" name="quantidade" id="" class="qtd">
+               <option value="1" selecte="selected" label="1">1</option>
+               <option value="2" label="2">2</option>
+               <option value="3" label="3">3</option>
+               <option value="4" label="4">4</option>
+               <option value="5" label="5">5</option>
+               <option value="6" label="6">6</option>
+           </select>       
+    </div> 
+    <div class="cart">
+      <img src="img/65808_index_gg.jpg" alt="gtx">
+        <a href="#" style="width:68%;"> Gigabyte GTX980Ti</a>
+          <h4 style="width:50%;">R$ 3.892,90</h4>
+           <select style="width:30%;" name="quantidade" id="" class="qtd">
+               <option value="1" selecte="selected" label="1">1</option>
+               <option value="2" label="2">2</option>
+               <option value="3" label="3">3</option>
+               <option value="4" label="4">4</option>
+               <option value="5" label="5">5</option>
+               <option value="6" label="6">6</option>
+           </select>       
+    </div> 
+    <div class="cart">
+      <img src="img/65808_index_gg.jpg" alt="gtx">
+        <a href="#" style="width:68%;"> Gigabyte GTX980Ti</a>
+          <h4 style="width:50%;">R$ 3.892,90</h4>
+           <select style="width:30%;" name="quantidade" id="" class="qtd">
+               <option value="1" selecte="selected" label="1">1</option>
+               <option value="2" label="2">2</option>
+               <option value="3" label="3">3</option>
+               <option value="4" label="4">4</option>
+               <option value="5" label="5">5</option>
+               <option value="6" label="6">6</option>
+           </select>       
+    </div> 
+   
+    <div class="total" >
+        <label for="subTotal" style="width:100%;margin-bottom:1%;">SubToal: R$3.892,90</label>
+        <label for="Frete" style="width:100%;margin-right:10%;margin-bottom:1%;margin-top:1%;">Frete: R$8,00</label>
+        <label for="Totaol" style="width:100%;margin-right:10%;margin-bottom:1%;margin-top:1%;">Total: R$3.900,90</label>
+        <button class="btn-confirma"style="vertical-align:middle;width:100%;border-radius:0;"><span>Comprar</span></button>
+    </div>     
+</div>
+<!-------------SCRIPT-JQUERY---------------->
+
+ <script src="js/jquery-1.12.3.min.js"></script>
+    <script>
+    $(".btn-menu").click(function(){
+        $(".menu").show();
+    });
+    $(".btn-close").click(function(){
+        $(".menu").hide();
+    });
+    </script>
+    
+</body>
+</html>

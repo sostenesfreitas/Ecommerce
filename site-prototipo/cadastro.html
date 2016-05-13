@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ecommerce">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site de ecommerce responsivo">
+    <meta name="keywords" content="Ecommerce,responsivo">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="sóstenes freitas">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="img/ecommerce-icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="js/App.js"></script>
+    
+</head>
+<body ng-controller="EcommerceController">
+    <div class="cadastrobox">
+        <form action="" class="cadastro" >
+            <label for="">Nome</label>
+            <input type="text">
+            
+            <label for="">Email</label>
+            <input type="text">
+            
+            <label for="">Cpf</label>
+            <input type="text">
+           
+             <label for="">Login</label>
+            <input type="text">
+            
+            <label for="">Senha</label>
+            <input type="text">
+           
+            
+        <div class="endereco">
+            <input type="text" name="cep" id="cep" ng-model="cep" placeholder="Cep" ng-minlength="8" ng-maxlength="8" required>
+            <a ng-click="buscar(cep)" ><buttom class="cep-buttom">Buscar<i class="fa fa-search" aria-hidden="true"></i></buttom></a>
+           
+            <input type="text" name="logradouro" class="form-left" placeholder="Logradouro" ng-model="endereco.logradouro">
+            
+            <input type="text" name="bairro" class="form-right" placeholder="Bairro" ng-model="endereco.bairro">
+            
+            <input type="text" name="cidade" class="form-left" placeholder="Cidade" ng-model="endereco.localidade">
+            
+            <input type="text" name="estado" class="form-right" placeholder="Estado" ng-model="endereco.uf">
+            
+            <input type="text" name="numero" class="form-left" placeholder="Numero" ng-model="endereco.numero">
+            
+            <input type="text" name="complemento" class="form-right" placeholder="Complemento" ng-model="endereco.complemento">
+        </div>
+            <button class="btn-confirma"style="vertical-align:middle"><span>Confirma</span></button>
+            <button class="btn-cancelar"style="vertical-align:middle"><span>Cancelar</span></button>
+                        
+            <img src="/img/Logo.png" alt="Logo">
+        </form>
+    </div>    
+</body>
+</html>

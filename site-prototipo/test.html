@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ecommerce">
+<head>
+    <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+
+      <script src="js/App.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <title>Test cep</title>
+</head>
+<body ng-controller="EcommerceController">
+   <h4>Endereço</h4>
+     <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+
+       <div class="form-group" ng-class="{ 'has-error' : userForm.cep.$invalid && !userForm.cep.$pristine }">
+             <label>Cep</label>
+             <input type="text" name="cep" class="form-control" ng-model="cep" ng-minlength="8" ng-maxlength="8" required>
+             <input type="button"  class="botao" ng-click="buscar(cep)" value="buscar">
+             <p ng-show="userForm.cep.$invalid && !userForm.cep.$pristine" class="help-block">Seu cep é obrigatório, devera ter somente 8 digitos</p>
+                    </div>
+                    <div class="form-group" ng-class="">
+                        <label>Logradouro</label>
+                        <input type="text" name="logradouro" class="form-control" ng-model="endereco.logradouro">
+                    </div>
+                   <div class="form-group" ng-class="">
+                        <label>Bairro</label>
+                        <input type="text" name="bairro" class="form-control" ng-model="endereco.bairro">
+                    </div>
+                  <div class="form-group" ng-class="">
+                        <label>Cidade</label>
+                        <input type="text" name="cidade" class="form-control" ng-model="endereco.localidade">
+                    </div>
+                  <div class="form-group" ng-class="">
+                        <label>Estado</label>
+                        <input type="text" name="estado" class="form-control" ng-model="endereco.uf">
+                    </div>
+                 <div class="form-group" ng-class="">
+                        <label>Numero</label>
+                        <input type="text" name="numero" class="form-control" ng-model="endereco.numero">
+                    </div>
+                <div class="form-group" ng-class="">
+                        <label>Complemento</label>
+                        <input type="text" name="complemento" class="form-control" ng-model="endereco.complemento">
+                    </div>
+          
+                    <button type="submit" class="botao" ng-disabled="userForm.$invalid">Enviar</button>
+    </form>
+</body>
+</html>
